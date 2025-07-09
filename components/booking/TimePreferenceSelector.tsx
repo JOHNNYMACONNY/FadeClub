@@ -100,15 +100,15 @@ export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreference
           Back
         </button>
         <div>
-          <h2 className="fade-club-heading text-3xl sm:text-4xl mb-2">Choose Your Preferred Times</h2>
-          <p className="text-gray-600 text-lg">
+          <h2 className="fade-club-heading text-3xl sm:text-4xl mb-2 text-primary-gold">Choose Your Preferred Times</h2>
+          <p className="text-gray-300 text-lg">
             Select up to 3 preferred appointment times. We&apos;ll contact you to confirm availability.
           </p>
         </div>
       </div>
 
       {/* Selection Status and Controls */}
-      <div className="card mb-8">
+      <div className="card-dark mb-8">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-4">
             <span className="badge badge-primary">
@@ -131,7 +131,7 @@ export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreference
         
         {selectedSlots.length > 0 && (
           <div>
-            <h4 className="font-medium text-brand-primary mb-3">Your Preferred Times:</h4>
+            <h4 className="font-medium text-primary-gold mb-3">Your Preferred Times:</h4>
             <div className="flex flex-wrap gap-3">
               {selectedSlots.map((slot, index) => (
                 <div
@@ -142,7 +142,7 @@ export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreference
                   <span>{slot.displayDate} at {slot.displayTime}</span>
                   <button
                     onClick={() => toggleSlot(slot)}
-                    className="ml-2 text-red-600 hover:text-red-800 transition-colors"
+                    className="ml-2 text-red-400 hover:text-red-300 transition-colors"
                   >
                     ×
                   </button>
@@ -161,12 +161,12 @@ export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreference
           return (
             <div 
               key={date} 
-              className={`card transition-all duration-300 ${
-                hasSelectedSlot ? 'ring-2 ring-brand-primary ring-opacity-50' : ''
+              className={`card-dark transition-all duration-300 ${
+                hasSelectedSlot ? 'ring-2 ring-primary-gold ring-opacity-50' : ''
               }`}
             >
               <div className="flex items-center mb-4">
-                <h3 className="fade-club-heading text-xl text-brand-primary">
+                <h3 className="fade-club-heading text-xl text-primary-gold">
                   {slots[0].displayDate}
                 </h3>
                 {hasSelectedSlot && (
@@ -189,10 +189,10 @@ export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreference
                       className={`
                         px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200
                         ${selected
-                          ? 'bg-brand-primary text-white shadow-md transform scale-105'
+                          ? 'bg-primary-gold text-dark-charcoal shadow-lg transform scale-105'
                           : disabled
-                          ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                          : 'bg-white border-2 border-gray-200 text-gray-700 hover:border-brand-primary hover:text-brand-primary hover:shadow-md hover:scale-105'
+                          ? 'bg-dark-gray text-gray-600 cursor-not-allowed'
+                          : 'bg-dark-charcoal border-2 border-dark-gray text-gray-300 hover:border-primary-gold hover:text-primary-gold hover:shadow-md hover:scale-105'
                         }
                       `}
                     >
@@ -223,7 +223,7 @@ export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreference
           disabled={selectedSlots.length === 0}
           className={`px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center ${
             selectedSlots.length === 0
-              ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+              ? 'bg-dark-gray text-gray-600 cursor-not-allowed'
               : 'btn-primary hover:scale-105 transform'
           }`}
         >

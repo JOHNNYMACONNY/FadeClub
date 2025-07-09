@@ -2,40 +2,48 @@
   {
     "service": {
       "id": 1,
-      "name": "Tier 1",
+      "name": "Tier 1 Monthly",
       "description": "Unlimited weekly haircuts.",
       "price": 150,
-      "duration": 30
+      "duration": 30,
+      "type": "monthly"
     },
     "client": {
-      "name": "j",
-      "phone": "831831831",
-      "notes": "bingbong",
+      "name": "John Smith",
+      "email": "john@example.com",
+      "phone": "831-831-8311",
+      "notes": "Prefers morning appointments",
       "isFirstTime": true
     },
     "id": "2025-07-09T05:17:46.197Z-ulq9lxr6k",
-    "submissionDate": "2025-07-09T05:17:46.197Z"
+    "submissionDate": "2025-07-09T05:17:46.197Z",
+    "dateTime": "2025-01-10T10:00:00.000Z",
+    "status": "confirmed"
   },
   {
     "service": {
-      "id": 1,
-      "name": "Tier 1",
-      "description": "Unlimited weekly haircuts.",
-      "price": 150,
-      "duration": 30
+      "id": 2,
+      "name": "Tier 2 Monthly",
+      "description": "Premium unlimited haircuts with styling.",
+      "price": 200,
+      "duration": 45,
+      "type": "monthly"
     },
     "client": {
-      "name": "bing",
-      "phone": "bong",
-      "notes": "dingdong",
-      "isFirstTime": true
+      "name": "Michael Johnson",
+      "email": "mike@example.com",
+      "phone": "831-555-0123",
+      "notes": "Allergic to certain hair products",
+      "isFirstTime": false
     },
     "id": "2025-07-09T05:38:56.667Z-hxsihyspr",
-    "submissionDate": "2025-07-09T05:38:56.667Z"
+    "submissionDate": "2025-07-09T05:38:56.667Z",
+    "dateTime": "2025-01-10T14:30:00.000Z",
+    "status": "pending"
   },
   {
     "service": {
-      "id": 1,
+      "id": 3,
       "name": "Regular Haircut",
       "description": "Professional haircut and styling",
       "price": 50,
@@ -43,45 +51,72 @@
       "type": "one-time"
     },
     "client": {
-      "name": "k",
-      "phone": "k",
-      "notes": "k",
+      "name": "Sarah Williams",
+      "email": "sarah@example.com",
+      "phone": "831-555-0456",
+      "notes": "First time client, nervous about new style",
       "isFirstTime": true
     },
     "id": "2025-07-09T06:02:46.780Z-17uyowkmz",
-    "submissionDate": "2025-07-09T06:02:46.780Z"
+    "submissionDate": "2025-07-09T06:02:46.780Z",
+    "dateTime": "2025-01-11T11:00:00.000Z",
+    "status": "confirmed"
   },
   {
     "service": {
-      "id": 1,
-      "name": "Regular Haircut",
-      "description": "Professional haircut and styling",
-      "price": 50,
-      "duration": 60,
+      "id": 4,
+      "name": "Beard Trim",
+      "description": "Professional beard trimming and shaping",
+      "price": 30,
+      "duration": 30,
       "type": "one-time"
     },
     "client": {
-      "name": "johnny",
-      "email": "johnfroberts11@gmail.com",
-      "phone": "8312779769",
-      "notes": "BINGBONG",
+      "name": "David Brown",
+      "email": "david@example.com",
+      "phone": "831-555-0789",
+      "notes": "Regular customer, knows what he wants",
+      "isFirstTime": false
+    },
+    "preferredTimes": [
+      {
+        "date": "2025-01-12",
+        "time": "15:00",
+        "displayDate": "Sun, Jan 12",
+        "displayTime": "3:00 PM"
+      }
+    ],
+    "id": "2025-07-09T06:28:15.769Z-bk5mhjzhh",
+    "submissionDate": "2025-07-09T06:28:15.769Z",
+    "dateTime": "2025-01-12T15:00:00.000Z",
+    "status": "completed"
+  },
+  {
+    "service": {
+      "id": 5,
+      "name": "Premium Cut & Style",
+      "description": "Luxury haircut with premium styling",
+      "price": 85,
+      "duration": 90,
+      "type": "one-time"
+    },
+    "client": {
+      "name": "Emily Davis",
+      "email": "emily@example.com",
+      "phone": "831-555-0321",
+      "notes": "Wants something trendy and modern",
       "isFirstTime": true
     },
     "preferredTimes": [
       {
-        "date": "2025-07-10",
+        "date": "2025-01-13",
         "time": "10:00",
-        "displayDate": "Wed, Jul 9",
+        "displayDate": "Mon, Jan 13",
         "displayTime": "10:00 AM"
-      },
-      {
-        "date": "2025-07-23",
-        "time": "11:00",
-        "displayDate": "Tue, Jul 22",
-        "displayTime": "11:00 AM"
       }
     ],
-    "id": "2025-07-09T06:28:15.769Z-bk5mhjzhh",
-    "submissionDate": "2025-07-09T06:28:15.769Z"
+    "id": "2025-01-08T10:15:30.123Z-abc123def",
+    "submissionDate": "2025-01-08T10:15:30.123Z",
+    "status": "pending"
   }
 ]

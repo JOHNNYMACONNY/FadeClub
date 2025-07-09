@@ -51,28 +51,28 @@ export const IntakeForm = ({
   return (
     <div className="px-4 sm:px-0">
       <div className="text-center mb-12">
-        <h2 className="fade-club-heading text-3xl sm:text-4xl mb-4">Your Details</h2>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        <h2 className="fade-club-heading text-3xl sm:text-4xl mb-4 text-primary-gold">Your Details</h2>
+        <p className="text-gray-300 text-lg max-w-2xl mx-auto">
           Please provide your information to complete the booking. We&apos;ll contact you to confirm your appointment.
         </p>
       </div>
       
       {/* Show selected service and times */}
       <div className="max-w-2xl mx-auto mb-8">
-        <div className="card">
-          <h4 className="fade-club-heading text-xl text-brand-primary mb-4">Booking Summary</h4>
+        <div className="card-dark">
+          <h4 className="fade-club-heading text-xl text-primary-gold mb-4">Booking Summary</h4>
           
           {/* Selected Service */}
           <div className="mb-6">
             <div className="flex items-center justify-between mb-2">
               <span className="font-medium">Service:</span>
-              <span className="text-brand-primary font-semibold">{selectedService.name}</span>
+              <span className="text-primary-gold font-semibold">{selectedService.name}</span>
             </div>
             <div className="flex items-center justify-between">
               <span className="font-medium">Price:</span>
               <span className="text-2xl font-bold">
                 ${selectedService.price}
-                {selectedService.type === 'monthly' && <span className="text-sm text-gray-500">/month</span>}
+                {selectedService.type === 'monthly' && <span className="text-sm text-gray-400">/month</span>}
               </span>
             </div>
           </div>
@@ -80,14 +80,14 @@ export const IntakeForm = ({
           {/* Selected Times */}
           {selectedTimes.length > 0 && (
             <div>
-              <h5 className="font-medium text-brand-primary mb-3">Your Preferred Times:</h5>
+              <h5 className="font-medium text-primary-gold mb-3">Your Preferred Times:</h5>
               <div className="grid gap-2">
                 {selectedTimes.map((time, index) => (
                   <div key={`${time.date}-${time.time}`} className="flex items-center">
                     <span className="badge badge-success mr-3 text-xs w-6 h-6 flex items-center justify-center">
                       {index + 1}
                     </span>
-                    <span className="text-gray-700">
+                    <span className="text-gray-300">
                       {time.displayDate} at {time.displayTime}
                     </span>
                   </div>
@@ -152,7 +152,7 @@ export const IntakeForm = ({
               className="form-input resize-none"
               placeholder="Any specific style preferences, hair type information, or special requests..."
             />
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-gray-400 mt-1">
               Help us give you the perfect cut by sharing any details about your desired style
             </p>
           </div>
@@ -162,12 +162,12 @@ export const IntakeForm = ({
               id="isFirstTime"
               type="checkbox"
               {...register('isFirstTime')}
-              className="mt-1 h-4 w-4 text-brand-primary border-gray-300 rounded focus:ring-brand-primary"
+              className="mt-1 h-4 w-4 text-primary-gold border-dark-gray rounded focus:ring-primary-gold bg-dark-charcoal"
             />
-            <label htmlFor="isFirstTime" className="text-sm text-gray-700 leading-5">
+            <label htmlFor="isFirstTime" className="text-sm text-gray-300 leading-5">
               <span className="font-medium">This is my first time at FadeClub</span>
               <br />
-              <span className="text-gray-500">We&apos;ll add extra time for a consultation</span>
+              <span className="text-gray-400">We&apos;ll add extra time for a consultation</span>
             </label>
           </div>
 

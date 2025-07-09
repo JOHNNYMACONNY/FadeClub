@@ -93,12 +93,12 @@ export const BookingWizard = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto p-4">
       {/* Hide step indicator on final confirmation screen */}
       {step < 5 && <StepIndicator currentStep={step} totalSteps={5} steps={WIZARD_STEPS} />}
       
-      {/* Main content area with branded styling */}
-      <div className="mt-8">
+      {/* Main content area with dark theme styling */}
+      <div className="mt-8 animate-slide-up">
         {renderStep()}
       </div>
     </div>

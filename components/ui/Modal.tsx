@@ -40,14 +40,14 @@ export const Modal = ({ children, isOpen, onClose }: ModalProps) => {
 
   return createPortal(
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 animate-fade-in z-40"
+      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 animate-slide-up z-40"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
     >
       <div
         ref={modalRef}
-        className="card w-full max-w-lg max-h-[90vh] overflow-y-auto animate-fade-in z-50"
+        className="card-dark w-full max-w-2xl max-h-[90vh] overflow-y-auto animate-slide-up z-50 border border-white/20"
         onClick={e => e.stopPropagation()}
         tabIndex={-1}
       >

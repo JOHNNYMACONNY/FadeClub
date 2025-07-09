@@ -38,4 +38,5 @@ export interface Booking {
   }[]; // Client's preferred appointment times
   submissionDate: Date; // When the user submitted the form
   dateTime?: Date; // Optional: To be set by the admin later
+  status: 'pending' | 'confirmed' | 'completed' | 'cancelled'; // Booking status
 }
