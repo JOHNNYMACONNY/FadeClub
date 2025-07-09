@@ -20,7 +20,12 @@ A sleek, modern web application for booking appointments at FadeClub, Nashville'
 
 ### Installation
 
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JOHNNYMACONNY/FadeClub.git
+   cd FadeClub
+   ```
+
 2. Install dependencies:
    ```bash
    npm install
@@ -30,6 +35,7 @@ A sleek, modern web application for booking appointments at FadeClub, Nashville'
    Create a `.env.local` file with:
    ```
    RESEND_API_KEY=your_resend_api_key
+   NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
    ```
 
 4. Run the development server:
@@ -135,13 +141,45 @@ npm run lint
 
 ## 🚀 Deployment
 
-This app is ready for deployment on Vercel, Netlify, or any platform supporting Next.js:
+**Repository**: [https://github.com/JOHNNYMACONNY/FadeClub](https://github.com/JOHNNYMACONNY/FadeClub)
+**Live Demo**: *[Add your Vercel URL here after deployment]*
+
+### Vercel Deployment (Recommended)
+
+1. **Fork or Clone**: The repository is already connected to GitHub
+2. **Import to Vercel**: 
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project" → Import `JOHNNYMACONNY/FadeClub`
+3. **Environment Variables**: Add in Vercel dashboard:
+   ```
+   RESEND_API_KEY=your_resend_api_key
+   NEXT_PUBLIC_API_BASE_URL=https://your-app.vercel.app
+   ```
+4. **Deploy**: Vercel will automatically build and deploy
+
+### Manual Deployment
+
+For other platforms:
 
 1. Build the application: `npm run build`
 2. Configure environment variables on your platform
-3. Deploy the `out` directory or connect your Git repository
+3. Deploy the built files
+
+### Environment Variables Required:
+- `RESEND_API_KEY`: For email notifications (required)
+- `NEXT_PUBLIC_API_BASE_URL`: Your production URL (optional, auto-detected)
 
 For detailed deployment instructions, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+## 🎨 UI Modernization
+
+A comprehensive **UI Modernization Plan** is included (`UI_MODERNIZATION_PLAN.md`) featuring:
+- Mobile-first dark theme design
+- Modern component system with animations
+- Professional color palette and typography
+- Enhanced user experience patterns
+
+The modernization plan includes step-by-step implementation guides for transforming the current interface into a sophisticated, dark-themed mobile-first application.
 
 ## 📞 Support
 
