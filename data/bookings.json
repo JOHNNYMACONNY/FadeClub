@@ -1,0 +1,87 @@
+[
+  {
+    "service": {
+      "id": 1,
+      "name": "Tier 1",
+      "description": "Unlimited weekly haircuts.",
+      "price": 150,
+      "duration": 30
+    },
+    "client": {
+      "name": "j",
+      "phone": "831831831",
+      "notes": "bingbong",
+      "isFirstTime": true
+    },
+    "id": "2025-07-09T05:17:46.197Z-ulq9lxr6k",
+    "submissionDate": "2025-07-09T05:17:46.197Z"
+  },
+  {
+    "service": {
+      "id": 1,
+      "name": "Tier 1",
+      "description": "Unlimited weekly haircuts.",
+      "price": 150,
+      "duration": 30
+    },
+    "client": {
+      "name": "bing",
+      "phone": "bong",
+      "notes": "dingdong",
+      "isFirstTime": true
+    },
+    "id": "2025-07-09T05:38:56.667Z-hxsihyspr",
+    "submissionDate": "2025-07-09T05:38:56.667Z"
+  },
+  {
+    "service": {
+      "id": 1,
+      "name": "Regular Haircut",
+      "description": "Professional haircut and styling",
+      "price": 50,
+      "duration": 60,
+      "type": "one-time"
+    },
+    "client": {
+      "name": "k",
+      "phone": "k",
+      "notes": "k",
+      "isFirstTime": true
+    },
+    "id": "2025-07-09T06:02:46.780Z-17uyowkmz",
+    "submissionDate": "2025-07-09T06:02:46.780Z"
+  },
+  {
+    "service": {
+      "id": 1,
+      "name": "Regular Haircut",
+      "description": "Professional haircut and styling",
+      "price": 50,
+      "duration": 60,
+      "type": "one-time"
+    },
+    "client": {
+      "name": "johnny",
+      "email": "johnfroberts11@gmail.com",
+      "phone": "8312779769",
+      "notes": "BINGBONG",
+      "isFirstTime": true
+    },
+    "preferredTimes": [
+      {
+        "date": "2025-07-10",
+        "time": "10:00",
+        "displayDate": "Wed, Jul 9",
+        "displayTime": "10:00 AM"
+      },
+      {
+        "date": "2025-07-23",
+        "time": "11:00",
+        "displayDate": "Tue, Jul 22",
+        "displayTime": "11:00 AM"
+      }
+    ],
+    "id": "2025-07-09T06:28:15.769Z-bk5mhjzhh",
+    "submissionDate": "2025-07-09T06:28:15.769Z"
+  }
+]
