@@ -1,6 +1,6 @@
 # FadeClub - Modern Barber Booking App
 
-A sleek, modern web application for booking appointments at FadeClub, Nashville's premier barbershop. Built with Next.js 15, TypeScript, and Tailwind CSS v4.
+A sleek, modern web application for booking appointments at FadeClub, LA's premier barbershop. Built with Next.js 15, TypeScript, and Tailwind CSS v4.
 
 ## 🎯 Features
 
@@ -9,6 +9,8 @@ A sleek, modern web application for booking appointments at FadeClub, Nashville'
 - **Time Preference System**: Clients select preferred appointment times, admin confirms manually
 - **Real-time Email Notifications**: Automated emails to admin using Resend
 - **Admin Dashboard**: Visual schedule view and client submission management
+- **Animated Progress Bar**: Custom barber pole animation showing booking progress
+- **Professional Branding**: Real FadeClub logo integration with responsive design
 - **Modern Design System**: Custom FadeClub branding with Tailwind CSS v4
 - **Fully Responsive**: Optimized for desktop, tablet, and mobile
 
@@ -94,10 +96,19 @@ data/
 ## 🎨 Design System
 
 The app features a custom FadeClub design system with:
+
 - **Brand Colors**: Primary blue, accent colors, and neutral grays
 - **Typography**: Modern font hierarchy with brand-specific headings
+- **Professional Logo**: Real FadeClub logo integrated throughout the interface
+- **Animated Progress Bar**: Custom barber pole animation with red, white, and blue stripes that fills horizontally as users progress through booking steps
 - **Components**: Consistent buttons, cards, forms, and modals
 - **Responsive Design**: Mobile-first approach with Tailwind CSS v4
+
+### Recent Design Improvements
+
+- **Logo Integration**: Replaced text-based header with actual FadeClub logo using Next.js Image optimization
+- **Animated Progress Indicator**: Transformed static progress bar into an animated barber pole that fills with traditional red, white, and blue diagonal stripes as users complete each booking step
+- **Enhanced User Experience**: Smooth transitions and visual feedback throughout the booking process
 
 ## 📧 Email Integration
 

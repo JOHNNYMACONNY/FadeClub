@@ -19,7 +19,7 @@ export const StepIndicator = ({ currentStep, totalSteps, steps }: StepIndicatorP
       
       <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
         <div
-          className="h-3 rounded-full transition-all duration-500 ease-in-out bg-gradient-to-r from-brand-primary to-brand-primary/80"
+          className="h-3 rounded-full transition-all duration-700 ease-in-out barber-pole-progress"
           style={{ 
             width: `${(currentStep / totalSteps) * 100}%`
           }}
