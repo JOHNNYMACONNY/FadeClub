@@ -33,26 +33,7 @@ export const ScheduleView = ({ bookings }: ScheduleViewProps) => {
       }, {} as Record<string, Booking[]>);
   }, [bookings]);
 
-  const getServiceBadgeClass = (service: { type: string }) => {
-    return service.type === 'monthly' 
-      ? 'badge-service-monthly' 
-      : 'badge-service-onetime';
-  };
 
-  const getStatusBadgeClass = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'pending':
-        return 'badge-status-pending';
-      case 'confirmed':
-        return 'badge-status-confirmed';
-      case 'completed':
-        return 'badge-status-completed';
-      case 'cancelled':
-        return 'badge-status-cancelled';
-      default:
-        return 'badge-status-pending';
-    }
-  };
 
   const getClientInitials = (name: string) => {
     return name
@@ -119,7 +100,7 @@ export const ScheduleView = ({ bookings }: ScheduleViewProps) => {
                             </Badge>
                           </div>
                         <p className="text-small">{booking.service.duration} min</p>
-                        <p className="text-caption">${booking.service.price}</p>
+                        <p className="text-caption">{'$' + booking.service.price}</p>
                       </div>
                     </div>
                   </div>

@@ -24,26 +24,7 @@ export const ClientDetailsModal = ({ booking, onClose }: ClientDetailsModalProps
       .slice(0, 2);
   };
 
-  const getServiceBadgeClass = (service: { type: string }) => {
-    return service.type === 'monthly' 
-      ? 'badge-service-monthly' 
-      : 'badge-service-onetime';
-  };
 
-  const getStatusBadgeClass = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'pending':
-        return 'badge-status-pending';
-      case 'confirmed':
-        return 'badge-status-confirmed';
-      case 'completed':
-        return 'badge-status-completed';
-      case 'cancelled':
-        return 'badge-status-cancelled';
-      default:
-        return 'badge-status-pending';
-    }
-  };
 
   return (
     <Modal isOpen={!!booking} onClose={onClose}>
@@ -107,7 +88,7 @@ export const ClientDetailsModal = ({ booking, onClose }: ClientDetailsModalProps
               </div>
               <div className="flex justify-between">
                 <span className="text-tertiary">Price:</span>
-                <span className="text-body font-semibold text-green-400">${booking.service.price}</span>
+                <span className="text-body font-semibold text-green-400">{'$' + booking.service.price}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-tertiary">Duration:</span>

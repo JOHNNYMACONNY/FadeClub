@@ -71,8 +71,10 @@ export const IntakeForm = ({
             <div className="flex items-center justify-between">
               <span className="font-medium">Price:</span>
               <span className="text-2xl font-bold">
-                ${selectedService.price}
-                {selectedService.type === 'monthly' && <span className="text-sm text-gray-400">/month</span>}
+                {'$' + selectedService.price}
+                {selectedService.type === 'monthly' && (
+                  <span className="text-sm text-gray-400">/month</span>
+                )}
               </span>
             </div>
           </div>
