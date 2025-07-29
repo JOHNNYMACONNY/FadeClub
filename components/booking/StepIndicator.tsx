@@ -40,7 +40,7 @@ export const StepIndicator = ({ currentStep, totalSteps, steps }: StepIndicatorP
                   isActive
                     ? 'text-brand-primary'
                     : isCompleted
-                    ? 'text-brand-success'
+                    ? 'text-success-green'
                     : 'text-gray-400'
               }`}
             >
@@ -49,7 +49,7 @@ export const StepIndicator = ({ currentStep, totalSteps, steps }: StepIndicatorP
                   isActive
                     ? 'bg-brand-primary'
                     : isCompleted
-                    ? 'bg-brand-success'
+                    ? 'bg-success-green-light'
                     : 'bg-gray-300'
                 }`}
               />
