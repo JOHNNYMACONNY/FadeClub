@@ -136,6 +136,7 @@ npm run build
 ```
 
 ### Type Checking
+Run the TypeScript compiler without emitting files:
 ```bash
 npm run type-check
 ```
