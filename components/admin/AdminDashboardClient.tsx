@@ -74,7 +74,7 @@ export const AdminDashboardClient = ({ bookings }: AdminDashboardClientProps) =>
                           Submitted: {new Date(booking.submissionDate).toLocaleDateString()}
                         </p>
                         <p className="text-caption text-green-400 font-semibold">
-                          ${booking.service.price}
+                          {'$' + booking.service.price}
                         </p>
                       </div>
                     </div>

@@ -112,7 +112,7 @@ export const ServiceSelector = ({ serviceType, onSelectService, onBack }: Servic
               
               <div className="mb-6">
                 <span className="text-3xl font-bold text-primary">
-                  ${service.price}
+                  {'$' + service.price}
                 </span>
                 {service.type === 'monthly' && (
                   <span className="text-lg text-tertiary ml-1">/month</span>
