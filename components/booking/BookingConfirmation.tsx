@@ -157,8 +157,8 @@ export const BookingConfirmation = ({ booking, onBookAnother }: BookingConfirmat
         {/* Footer Message */}
         <div className="mt-12 text-center">
           <p className="text-gray-400 text-sm">
-            Questions? Call us at <span className="font-medium text-primary-gold">(615) 555-FADE</span> or email 
-            <span className="font-medium text-primary-gold"> hello@fadeclub.com</span>
+            Questions? Call us at <span className="font-medium text-primary-gold">(615) 555-FADE</span> or email
+            <span className="font-medium text-primary-gold">hello@fadeclub.com</span>
           </p>
         </div>
       </div>
