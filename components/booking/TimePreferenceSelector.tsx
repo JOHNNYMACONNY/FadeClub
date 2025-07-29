@@ -15,11 +15,7 @@ interface TimePreferenceSelectorProps {
   onBack: () => void;
 }
 
-export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreferenceSelectorProps) => {
-  const [selectedSlots, setSelectedSlots] = useState<TimeSlot[]>([]);
-
-  // Generate time slots for next 2 weeks (excluding Sundays and Mondays)
-  const generateTimeSlots = (): TimeSlot[] => {
+export const generateTimeSlots = (): TimeSlot[] => {
     const slots: TimeSlot[] = [];
     const today = new Date();
     const businessHours = ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00'];
@@ -55,6 +51,9 @@ export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreference
     
     return slots;
   };
+
+export const TimePreferenceSelector = ({ onSelectTimes, onBack }: TimePreferenceSelectorProps) => {
+  const [selectedSlots, setSelectedSlots] = useState<TimeSlot[]>([]);
 
   const timeSlots = generateTimeSlots();
 
